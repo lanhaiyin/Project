@@ -1,0 +1,18 @@
+#include "db.hpp"
+int main(int argc,char *argv[])
+{
+    MYSQL *mysql=blog_system::MysqlInit();
+
+      blog_system::TableTag blog(mysql);
+       
+        Json::Value user;
+//    user["title"]="我的博客2";
+//   user["content"]="我的博客hhh真好";
+  //  blog.Insert(user);
+  blog.GetOne(1,&user);
+             //   Json::Reader reader; 
+               Json::StyledWriter writer;//有格式的序列化
+                    std:: cout<<writer.write(user)<<std::endl;
+                      blog_system::MysqlRelease(mysql);
+                      return 0;
+}
