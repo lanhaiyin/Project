@@ -1,0 +1,25 @@
+falses:false:true
+
+test的输入-121
+stdin路径./temp_file/tmp_1614497172.1.stdin
+
+Test的内容  [
+   {
+      "error" : "true",
+      "input" : "121",
+      "output" : "true"
+   },
+   {
+      "error" : "false:true\n\ntest的输入-121\nstdin路径./temp_file/tmp_1614497172.1.stdin",
+      "input" : "-121",
+      "output" : "false"
+   }
+]
+
+resp的内容{
+   "error" : 0,
+   "reason" : "",
+   "stderr" : "",
+   "stdout" : "falses:false:true\n\ntest的输入-121\nstdin路径./temp_file/tmp_1614497172.1.stdin\n"
+}
+
